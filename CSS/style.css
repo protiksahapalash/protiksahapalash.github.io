@@ -1,58 +1,72 @@
-body{
+body {
     font-family: 'Open Sans', sans-serif;
 }
-.banner-container{
+
+.banner-container {
     background-color: #1E1E1E;
 }
-.banner-column{
+
+.banner-column {
     background-color: #FF6600;
 }
-.navbar-container{
+
+.navbar-container {
     background-color: #1877F2;
     position: sticky;
     top: 0;
     z-index: 2;
 }
-.about-container{
+
+.about-container {
     background-color: #563D7C;
 }
-.education-container{
+
+.education-container {
     background-color: lightskyblue;
 }
-.bg-redtype{
+
+.bg-redtype {
     background-color: gold;
 }
-.redtype-color{
+
+.redtype-color {
     color: black;
 }
-.circle{
+
+.circle {
     background-color: gold;
     width: 150px;
     height: 150px;
     border-radius: 50%;
 }
-.project-container{
+
+.project-container {
     background-color: black;
 }
-.form-container{
+
+.form-container {
     background-color: lightslategray;
 }
-.footer{
+
+.footer {
     background-color: #1877F2;
 }
-.Circle{
+
+.Circle {
     width: 60px;
     height: 60px;
     border-radius: 50%;
     display: inline-block;
-    background-color:white;
-    font-size: 50px;
+    background-color: white;
+    font-size: 40px;
     text-align: center;
-    color: rgb(255, 0, 0);
+    color: #1877F2;
 }
-.Circle:hover{
+
+.Circle:hover {
     background-color: lightslategray;
 }
-#swami{
+
+#swami {
     padding-top: 25px;
 }
