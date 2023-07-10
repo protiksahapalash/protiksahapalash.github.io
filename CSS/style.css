@@ -9,6 +9,9 @@ body{
 }
 .navbar-container{
     background-color: #1877F2;
+    position: sticky;
+    top: 0;
+    z-index: 2;
 }
 .about-container{
     background-color: #563D7C;
@@ -27,4 +30,29 @@ body{
     width: 150px;
     height: 150px;
     border-radius: 50%;
+}
+.project-container{
+    background-color: black;
+}
+.form-container{
+    background-color: lightslategray;
+}
+.footer{
+    background-color: #1877F2;
+}
+.Circle{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: inline-block;
+    background-color:white;
+    font-size: 50px;
+    text-align: center;
+    color: rgb(255, 0, 0);
+}
+.Circle:hover{
+    background-color: lightslategray;
+}
+#swami{
+    padding-top: 25px;
 }
