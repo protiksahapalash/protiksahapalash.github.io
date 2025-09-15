@@ -70,3 +70,39 @@ body {
 #swami {
     padding-top: 25px;
 }
+
+/* 1) reset page margins (safe to always have) */
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+/* 2) make the Education section stop collapsing margins and keep its background touching the next section */
+#Education,
+.education-container {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;    /* keep inner spacing with children, not parent */
+  overflow: hidden;                 /* prevents child bottom margin from escaping parent */
+  display: flow-root;               /* alternative to overflow if you prefer */
+}
+
+/* 3) ensure Project section has no top margin or top border that shows white */
+#Project,
+.project-container {
+  margin-top: 0 !important;
+  border-top: none !important;
+  padding-top: 40px; /* adjust spacing between sections as you want */
+}
+
+/* 4) reset potentially offending element margins (headings, cards, rows) */
+#Education h2, #Project h2,
+.education-container .row:last-child,
+.education-container .card:last-child,
+.education-container .card-body:last-child {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* 5) if there is an <hr> or stray divider remove it */
+hr { margin: 0; border: 0; }
+
