@@ -3,22 +3,22 @@ body {
 }
 
 .banner-container {
-    background-color: #1E1E1E;
+    background-color: #67E5EB;
 }
 
 .banner-column {
-    background-color: #FF6600;
+    background-color: #F7EBDC;
 }
 
 .navbar-container {
-    background-color: #1877F2;
+    background-color: #F7EBDC;
     position: sticky;
     top: 0;
     z-index: 2;
 }
 
 .about-container {
-    background-color: #563D7C;
+    background-color: #F3FF85;
 }
 
 .education-container {
@@ -26,7 +26,7 @@ body {
 }
 
 .bg-redtype {
-    background-color: gold;
+    background-color: #F3FF85;
 }
 
 .redtype-color {
@@ -41,7 +41,7 @@ body {
 }
 
 .project-container {
-    background-color: black;
+    background-color: #67E5EB;
 }
 
 .form-container {
