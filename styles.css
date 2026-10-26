@@ -6,3 +6,30 @@
 @media(max-width:420px){.wrap,.nav-wrap{width:calc(100% - 32px)}h1{font-size:42px}.hero{column-gap:15px}.hero-copy .eyebrow{font-size:7px;letter-spacing:1px}.tiny-line{width:15px;margin-right:4px}.personal-grid{grid-template-columns:1fr}.shibpur-photo{display:grid;grid-template-columns:.8fr 1fr;gap:20px;align-items:center}.shibpur-photo img{aspect-ratio:4/5}.personal-copy h3 br{display:none}.friends-photo img{aspect-ratio:1.6/1}.research-card{grid-template-columns:1fr}.research-card h3{margin-bottom:12px}.research-card.featured h3{grid-row:auto}.project-fact{grid-column:1}.research-card .card-top{margin-bottom:15px}.button{padding:10px 13px;gap:14px}.social-row{gap:17px}h2{font-size:30px}.section-head>.text-link{font-size:9px}.highlights strong{font-size:29px;width:58px}.highlights>div{gap:8px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
 @media print{.site-header,.button-row,.social-row,.footer,.contact-links,.more-projects{display:none}.wrap{width:100%}body{background:white;color:black;font-size:11px}.section{padding-block:20px}.hero{padding:0;gap:30px}.hero-photo{max-width:180px}h1{font-size:40px}h2{font-size:26px}.research-card,.publication,.education-entry,.timeline-entry{break-inside:avoid}.beyond-section{display:none}a{text-decoration:none}.publication-section{background:white}}
+/* Personal section photo layout */
+.personal-grid {
+  grid-template-columns: minmax(0, .85fr) minmax(0, 1.5fr);
+}
+
+.personal-grid > * {
+  min-width: 0;
+}
+
+.shibpur-photo img,
+.friends-photo img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+@media (max-width: 760px) {
+  .personal-grid {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.3fr);
+  }
+}
+
+@media (max-width: 420px) {
+  .personal-grid {
+    grid-template-columns: 1fr;
+  }
+}
